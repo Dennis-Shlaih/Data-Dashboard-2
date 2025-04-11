@@ -1,5 +1,6 @@
 import React from "react";
-import "../App.css"
+import { Link } from "react-router-dom";
+import "../App.css";
 
 function List({ books }) {
   return (
@@ -13,7 +14,14 @@ function List({ books }) {
       <tbody>
         {books.map((book, index) => (
           <tr key={index}>
-            <td>{book.title}</td>
+            <td>
+              <Link
+                to={`/details/${book.key.split("/").pop()}`}
+                state={{ book }}
+              >
+                {book.title}
+              </Link>
+            </td>
             <td>{book.authors?.[0]?.name || "Unknown"}</td>
           </tr>
         ))}

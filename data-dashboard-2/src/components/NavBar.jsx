@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css"
 
-const NavBar = ({ setCategory }) => {
+function NavBar({ setCategory }) {
   return (
     <nav className="navbar">
       <button onClick={() => setCategory("fiction")}>Fiction</button>
