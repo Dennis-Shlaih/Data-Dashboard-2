@@ -32,14 +32,14 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![Hobby Hub Walkthrough](https://github.com/user-attachments/assets/342ea442-d547-4038-8551-471338b6bb8f)
+![Data-Dashboard-2 Walkthrough](https://github.com/user-attachments/assets/82f89011-6cab-4206-9c49-7ddc4d50213a)
 
 GIF created with Microsoft Clipchamp
 
 ## Challenges
 
 - [X] I initially struggled with loading the correct book data in the DetailView route. The app fetched data from a subject-based endpoint that didn’t always include the selected book, leading to missing or incorrect details. 
-- [X] Managing form state across different components
+- [X]  Setting up routing using React Router and integrating it with both the layout and sidebar navigation was also quite a challenge. I needed routes for home, the detail view, and two separate chart overview pages, while keeping the layout consistent.
 - [X] Recharts required data to be formatted in very specific structures. Dynamically generating chart-friendly data from nested and inconsistent book data (e.g. missing fields, varying author formats) was difficult.
 
 ## License
